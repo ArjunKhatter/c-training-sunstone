@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    int b;
+    cin >> a >> b;
+    int arr[a][b];
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < b; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
+    for (int i = 0; i < a; i++)
+    {
+        if (i == 0 || i % 2 == 0)
+            for (int j = 0; j < b; j++)
+            {
+                cout << arr[i][j];
+            }
+        else
+        {
+            for (int j < b; j >= 0; j--)
+            {
+                cout << arr[i][j];
+            }
+        }
+    }
+    return 0;
+}
